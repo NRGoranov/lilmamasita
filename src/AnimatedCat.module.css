@@ -1,0 +1,95 @@
+.catContainer {
+  transform-origin: center;
+  animation: catSequence 6s ease-in-out infinite;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Mobile: smaller cat */
+@media (max-width: 479px) {
+  .catContainer {
+    max-width: 200px;
+  }
+}
+
+/* Tablet: medium cat */
+@media (min-width: 480px) and (max-width: 767px) {
+  .catContainer {
+    max-width: 230px;
+  }
+}
+
+/* Desktop: full size */
+@media (min-width: 768px) {
+  .catContainer {
+    max-width: 260px;
+  }
+}
+
+@keyframes catSequence {
+  /* Wiggling phase (0-70%) */
+  0%, 70% {
+    transform: translateX(0) rotate(0deg);
+  }
+  5%, 65% {
+    transform: translateX(-8px) rotate(-3deg);
+  }
+  10%, 60% {
+    transform: translateX(8px) rotate(3deg);
+  }
+  15%, 55% {
+    transform: translateX(-8px) rotate(-3deg);
+  }
+  20%, 50% {
+    transform: translateX(8px) rotate(3deg);
+  }
+  25%, 45% {
+    transform: translateX(-8px) rotate(-3deg);
+  }
+  30%, 40% {
+    transform: translateX(8px) rotate(3deg);
+  }
+  35% {
+    transform: translateX(-8px) rotate(-3deg);
+  }
+  
+  /* Stop and look up excitedly (70-85%) */
+  70% {
+    transform: translateX(0) rotate(0deg) translateY(0);
+  }
+  72% {
+    transform: translateX(0) rotate(-5deg) translateY(-10px);
+  }
+  74% {
+    transform: translateX(0) rotate(5deg) translateY(-15px);
+  }
+  76% {
+    transform: translateX(0) rotate(-3deg) translateY(-12px);
+  }
+  78% {
+    transform: translateX(0) rotate(3deg) translateY(-15px);
+  }
+  80% {
+    transform: translateX(0) rotate(0deg) translateY(-10px);
+  }
+  
+  /* Return to normal (85-100%) */
+  85%, 100% {
+    transform: translateX(0) rotate(0deg) translateY(0);
+  }
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
