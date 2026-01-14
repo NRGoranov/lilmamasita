@@ -150,6 +150,7 @@ function App() {
         ) : (
           <div className={styles.successContent}>
             <h1 className={styles.successTitle}>Yay! 💖</h1>
+            <p className={styles.perfectPairText}>The perfect pair</p>
             <p className={styles.successText}>Best Valentine ever!!!</p>
             <div className={styles.art} aria-hidden="true">
               <AnimatedCat />

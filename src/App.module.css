@@ -108,12 +108,22 @@
 }
 
 .successTitle {
-  margin: 0 0 16px 0;
-  font-size: clamp(32px, 8vw, 48px);
+  margin: 0 0 20px 0;
+  font-size: clamp(40px, 10vw, 64px);
   font-weight: 900;
   color: var(--text-red);
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.2;
+}
+
+.perfectPairText {
+  margin: 0 0 20px 0;
+  font-size: clamp(28px, 7vw, 48px);
+  font-weight: 700;
+  color: var(--text-red);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.3;
+  font-style: italic;
 }
 
 .successText {
